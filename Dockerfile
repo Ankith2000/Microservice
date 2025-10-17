@@ -19,7 +19,7 @@ FROM base as builder
 RUN apt-get -qq update \
     && apt-get install -y --no-install-recommends \
         wget g++ \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*  
 
 # Download the grpc health probe
 # renovate: datasource=github-releases depName=grpc-ecosystem/grpc-health-probe
