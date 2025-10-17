@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t anki2000/adservice:latest ." 
+                        sh "docker build -t anki2000/adservice:latest ."  
                     }
                 }
             }
